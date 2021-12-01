@@ -54,9 +54,9 @@ function toUpper(strtemp) {
 }
 
 
-let str; 
-let keyword;
+let str; // Input Text
+let keyword; // Input Key
 let key = getKey(str, keyword);
  
-encryption(str, key);
-decryption(str, key);
+encryption(str, key); // Encryption Function
+decryption(str, key); // Decryption Function

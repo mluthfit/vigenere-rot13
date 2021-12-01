@@ -16,7 +16,7 @@ function rot13(str, shift) {
     console.log("Result : " + result);
 }
 
-let str = "PITON";
-let shift = 13;
+let str; // Input Text
+let shift = 13; // Shift 13
 
-rot13(str, shift);
+rot13(str, shift); // Function ROT13
