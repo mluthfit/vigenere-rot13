@@ -2,7 +2,7 @@
 
 Repository ini merupakan proyek ujian akhir semester dari praktikum Kriptografi, Teknik Informatika Universitas Padjadjaran.
 
-Program ini akan menampilkan menu pilihan kriptografi yaitu Vigenere, ROT13, Vigenere + RO13, dan ROT13 + Vigenere. 
+Program ini akan menampilkan menu pilihan kriptografi yaitu Vigenere, ROT13, dan Vigenere + RO13. 
 
 ## Credits
 | NPM | Name |
