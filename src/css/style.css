@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --background1: #1E3163;
+  --background2: #F037A5;
+  --background3: #F8F8F8;
+  --button-text: #FFFFFF;
+  --button-color: #2D46B9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button, 
+a, 
+input,
+textarea {
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.dflex {
+  display: flex;
+}
+
+.button {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  font-weight: bold;
+}
+
+.back {
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 10px;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  background-color: var(--button-text);
+  color: black;
+}
+
+main {
+  margin: 0 auto;
+  padding-top: 150px;
+  text-align: center;
+}
+
+main h1 {
+  color: var(--button-text);
+}
+
+.container {
+  margin: 50px auto 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  padding: 1.5rem 1rem;
+  background-color: var(--background3);
+  border-radius: 10px;
+}
+
+.size-m {
+  width: 200px;
+}
+
+.size-xl {
+  width: 500px;
+}
+
+.card h2 {
+  height: 150px;
+  align-items: center;
+}
+
+.card a {
+  display: block;
+  margin-top: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.marbot {
+  margin-bottom: 30px;
+}
+
+.input-group label {
+  font-weight: bolder;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.input-group input {
+  display: block;
+  border: 1px solid var(--background2);
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0.2rem 1rem
+}
+
+.card button {
+  padding: 0.5rem 1.5rem;
+  display: block;
+  margin: 5px auto;
+  width: 90%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.result {
+  margin-top: 25px;
+}
+
+.result input {
+  text-align: center;
+}
