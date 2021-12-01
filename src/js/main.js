@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
           generateResult(ROT13.job(text));
         } else {
           const key = document.querySelector('#input_key').value
-          if (key !== '') {
+          if (key !== '' && isAllAlphabets(key)) {
             if (this.getAttribute('id') === 'encryption') {
               const vigenere = Vigenere.encryption(text, key);
               generateResult(ROT13.job(vigenere));
             } else {
-              const rot13 = ROT13.job(text);
-              generateResult(Vigenere.decryption(rot13, key));
+              const vigenere = Vigenere.decryption(text, key);
+              generateResult(ROT13.job(vigenere));
             }
           }
         }
@@ -41,4 +41,16 @@ const generateResult = (value) => {
     <label for="input_result">Result : </label>
     <input type="text" id="input_result" value='${value}' disabled>
   `;
+}
+
+const isAllAlphabets = (str) => {
+  for (let i = 0; i < str.length; i++) {
+    if (!checkAplhabet(str[i])) return false;
+  }
+
+  return true;
+}
+
+const checkAplhabet = (char) => {
+  return (/[a-zA-Z]/).test(char);
 }
