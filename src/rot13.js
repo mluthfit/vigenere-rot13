@@ -1,10 +1,11 @@
-function rot13(str, shift) {
+function rot13(str) {
     let result = "";
+    let shift = 13; // Shift 13
 
     for (let i = 0; i < str.length; i++) {
         let ch = str[i];
 
-        if (ch.toUpperCase(str[i])) {
+        if (ch == ch.toUpperCase(str[i])) {
             let chTemp = String.fromCharCode((ch.charCodeAt(0) + shift-65) % 26 + 65);
             result += chTemp;
         } else {
@@ -17,6 +18,5 @@ function rot13(str, shift) {
 }
 
 let str; // Input Text
-let shift = 13; // Shift 13
 
-rot13(str, shift); // Function ROT13
+rot13(str); // Function ROT13
